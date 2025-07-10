@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasii Devina</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="validasi.js"></script>
+</head>
+<body class="light-theme">
+    <div class="container">
+        <header>
+            <h1>REGISTRASI</h1>
+        </header>
+        
+        <section>
+            <form name="dataform" method="post" enctype="multipart/form-data" action="proses.php" onsubmit="return kirim()">
+                <div class="form-group">
+                    <label for="nama">Nama :</label>
+                    <input type="text" id="nama" name="nama" placeholder="nama panjang" required><br><br>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="text" id="email" name="email" placeholder="vina@gmail.com" required><br><br>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password :</label>
+                    <input type="password" name="password" id="password" placeholder="******" required><br><br>
+                </div>
+                
+                <div>
+                    <label for="confirmpassword">Konfirmasi Password :</label>
+                    <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Konfirmasi" required><br><br>
+                </div>
+        
+                <div class="form-group">
+                    <button type="submit">Daftar</button>
+                    <button type="reset">Reset</button>
+                </div>
+               
+            </form>
+        </section>
+        
+        <div>
+            <strong><a href="lihatregistrasi.php">::Lihat Data Register::</a></strong>
+        </div>
+    </div>
+    
+
+</body>
+</html>
